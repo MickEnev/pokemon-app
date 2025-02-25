@@ -1,0 +1,48 @@
+.pokemonDashboard {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    gap: 8px;
+    padding: 8px;
+    max-width: 100%;
+}
+
+.information {
+    max-width: 100%;
+    width: 100%;
+    word-break: break-all;
+}
+
+.keyVal {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonContainer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.pokemonName {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 5px;
+    color: #EBE25E;
+}
+
+.pokemonButton {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition-duration: 0.3s;
+    background: rgb(0, 0, 0, 0.3);
+    color: white;
+}
+
+.pokemonButton:hover {
+    background-color: white;
+    color: #0f172a;
+}
