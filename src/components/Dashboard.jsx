@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import styles from './dashboard.module.css'
 import Options from './Options'
 import useFetchData from './hooks/useFetchData'
-import useFetchPokemon from './hooks/useFetchPokemon'
 import Pokemon from './Pokemon'
 import Moves from './Moves'
 import Items from './Items'
@@ -11,7 +10,6 @@ import Berries from './Berries'
 export default function Dashboard() {
   const [selection, setSelection] = useState(null)
   const {data, error, loading} = useFetchData(selection)
-  //const [pokemon, setPokemon] = useFetchPokemon(selection)
 
   const dataRender = {
     'pokemon': <Pokemon data={data}/>,

@@ -1,7 +1,7 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
 export default function useFetchPokemon(selection) {
-    const [data, setData] = useState(null)
+    const [pokemon, setPokemon] = useState(null)
     const [loading, setLoading] = useState(null)
     const [error, setError] = useState(null)
     
@@ -18,12 +18,19 @@ export default function useFetchPokemon(selection) {
         }
         setLoading(true)
         async function fetchData() {
-            const url = apiURL + '/'
+            const url = apiURL + '/pokemon/' + selection + '?limit=-1'
+            try {
+                const res = await fetch(url, options)
+                const jsonData = await res.json()
+                console.log("POKEMON DATA: ", jsonData)
+                setPokemon(jsonData)
+            } catch (err) {
+                setError(err.message)
+            } finally {
+                setLoading(false)
+            }
         }
-    })
-  return (
-    <div>
-
-    </div>
-  )
+        fetchData()
+    }, [selection])
+  return {pokemon, error, loading}
 }
