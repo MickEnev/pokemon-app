@@ -51,7 +51,7 @@ export default function PokemonDetails({ pokemon, onBack, loading, error }) {
             <div className={styles.typesList}>
               {pokemon.types.map((type, index) => (
                 <span key={index} className={styles.type}>
-                  {type.type.name}
+                  {type.type.name.charAt(0).toUpperCase() + type.type.name.slice(1) + " "}
                 </span>
               ))}
             </div>
@@ -64,7 +64,7 @@ export default function PokemonDetails({ pokemon, onBack, loading, error }) {
             <div className={styles.abilitiesList}>
               {pokemon.abilities.map((ability, index) => (
                 <span key={index} className={styles.ability}>
-                  {ability.ability.name}
+                  {ability.ability.name.charAt(0).toUpperCase() + ability.ability.name.slice(1) + " "}
                 </span>
               ))}
             </div>

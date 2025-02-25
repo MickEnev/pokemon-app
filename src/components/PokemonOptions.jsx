@@ -15,17 +15,19 @@ export default function PokemonOptions(props) {
 
   return (
     <div className={styles.pokemonList}>
-      <input 
-        value={searchTerm} 
-        placeholder='Search Pokemon' 
-        onChange={(e) => setSearchTerm(e.target.value)}
-        className={styles.searchInput}
-      />
+        <div className={styles.pokemonDashboard}>
+        <input 
+            value={searchTerm} 
+            placeholder='Search Pokemon' 
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className={styles.searchInput}
+        />
+        </div>
 
       <div className={styles.pokemonGrid}>
         {filteredPokemon.map((pokemon, index) => (
           <div key={index} className={styles.pokemonCard}>
-            <h1 className={styles.pokemonName}>{pokemon.name.toUpperCase()}</h1>
+            <h1 className={styles.pokemonName}>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</h1>
             <div className={styles.buttonContainer}>
             <button 
               onClick={() => onSelectPokemon(pokemon.name)} 

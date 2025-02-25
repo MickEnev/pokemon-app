@@ -19,7 +19,7 @@ export default function Options(props) {
             return (
                 <button onClick={setSelection(question)} className={`${styles.button} ${question === selection ? styles.selectedButton :
                     styles.nonSelectedButton}`} key={index}>
-                    {question}
+                    {question.charAt(0).toUpperCase() + question.slice(1)}
                     </button>
             )
         })}
