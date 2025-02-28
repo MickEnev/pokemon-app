@@ -46,3 +46,14 @@
     background-color: white;
     color: #0f172a;
 }
+
+.searchBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spriteContainer {
+    display: flex;
+    justify-content: center;
+}
