@@ -24,7 +24,7 @@ export default function PokemonDetails({ pokemon, onBack, loading, error }) {
       </button>
       
       <div className={styles.detailsContainer}>
-        <h1 className={styles.pokemonName}>{pokemon.name.toUpperCase()}</h1>
+        <h1 className={styles.pokemonName}>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</h1>
         
         {pokemon.sprites && (
           <div className={styles.spriteContainer}>

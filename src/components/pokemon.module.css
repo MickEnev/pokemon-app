@@ -56,4 +56,16 @@
 .spriteContainer {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 150px;
+    height: 150px;
+}
+
+.pokemonSprite {
+    width: 250px;
+    height: 250px;
+    padding: 0;
+    margin: -75px auto;
+    object-fit: fill;
 }
