@@ -4,7 +4,12 @@ This is my second app in a series of apps I am making to learn React. My goal fo
 
 ![image](https://github.com/user-attachments/assets/928558a6-4eb6-4b17-8763-18dc86ece55b)
 ![image](https://github.com/user-attachments/assets/d9dc7b70-5466-46c3-b00b-1352f2309dea)
-![image](https://github.com/user-attachments/assets/bb450190-3881-4b9a-b52a-a5efbb286167)
+![image](https://github.com/user-attachments/assets/56e6426c-0b5b-4ecd-a260-bede07ee625d)
+![image](https://github.com/user-attachments/assets/9de40e15-e753-4c12-b1eb-2798db1d772d)
+![image](https://github.com/user-attachments/assets/60483bed-a51b-4d42-aff0-3fc3bffc7014)
+
+
+
 
 ## Roadmap
 In the coming days I will add similar functionality for moves, items, and berries. As with my lord of the rings app this is a way for me to learn react so after I get a few more projects under my belt I will return to this one and subsequently judge and improve 
