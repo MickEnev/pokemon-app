@@ -41,7 +41,11 @@ export default function MoveDetails({ move, onBack, loading, error }) {
         <div className={styles.statsContainer}>
           <h2>Effect</h2>
           <div className={styles.statsList}>
-            <p>{move.effect_entries.short_effect ? move.effect_entries.short_effect : "None"}</p>
+            <p>
+                {move.effect_entries.length > 0 && move.effect_entries[0].short_effect
+                    ? move.effect_entries[0].short_effect
+                    : "None"}
+            </p>
           </div>
         </div>
 
