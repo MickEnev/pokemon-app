@@ -5,7 +5,7 @@ import useFetchData from './hooks/useFetchData'
 import Pokemon from './pokemon/Pokemon.jsx'
 import Moves from './moves/Moves.jsx'
 import Items from './items/Items.jsx'
-import Berries from './berries/Berries.jsx'
+import Locations from './locations/Locations.jsx'
 
 export default function Dashboard() {
   const [selection, setSelection] = useState(null)
@@ -15,7 +15,7 @@ export default function Dashboard() {
     'pokemon': <Pokemon data={data}/>,
     'move': <Moves data={data}/>,
     'item': <Items data={data}/>,
-    'berry': <Berries data={data}/>
+    'location': <Locations data={data}/>
   }
 
   function onClickHandler(clickedButton) {

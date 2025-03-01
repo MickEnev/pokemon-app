@@ -8,7 +8,7 @@ export default function Options(props) {
         'pokemon',
         'move',
         'item',
-        'berry'
+        'location'
     ]
 
     console.log("SELECTION: ", selection)
