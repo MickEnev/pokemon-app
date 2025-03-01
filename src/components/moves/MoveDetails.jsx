@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './pokemon.module.css';
+import styles from '../pokemon/pokemon.module.css';
 
 export default function MoveDetails({ move, onBack, loading, error }) {
   if (loading) {
