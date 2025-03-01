@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import styles from './pokemon.module.css';
+import styles from '../pokemon/pokemon.module.css';
 import MoveOptions from './MoveOptions.jsx'
-import useFetchMoves from './hooks/useFetchMoves.jsx';
+import useFetchMoves from '../hooks/useFetchMoves.jsx';
 import MoveDetails from './MoveDetails.jsx'
 
 export default function Moves(props) {

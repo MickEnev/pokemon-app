@@ -2,10 +2,10 @@ import React, {useState} from 'react'
 import styles from './dashboard.module.css'
 import Options from './Options'
 import useFetchData from './hooks/useFetchData'
-import Pokemon from './Pokemon'
-import Moves from './Moves'
-import Items from './Items'
-import Berries from './Berries'
+import Pokemon from './pokemon/Pokemon.jsx'
+import Moves from './moves/Moves.jsx'
+import Items from './items/Items.jsx'
+import Berries from './berries/Berries.jsx'
 
 export default function Dashboard() {
   const [selection, setSelection] = useState(null)

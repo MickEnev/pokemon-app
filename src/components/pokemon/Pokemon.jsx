@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styles from './pokemon.module.css';
-import PokemonOptions from './PokemonOptions';
+import PokemonOptions from './PokemonOptions.jsx';
 import PokemonDetails from './PokemonDetails.jsx';
-import useFetchPokemon from './hooks/useFetchPokemon';
+import useFetchPokemon from '../hooks/useFetchPokemon.jsx';
 
 export default function Pokemon(props) {
   const { data } = props;

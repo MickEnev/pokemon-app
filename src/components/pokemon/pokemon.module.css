@@ -69,3 +69,20 @@
     margin: -75px auto;
     object-fit: fill;
 }
+
+.itemSpriteContainer {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.itemSprite {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    margin: -25px auto;
+    object-fit: fill;
+}
