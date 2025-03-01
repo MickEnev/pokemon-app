@@ -34,7 +34,7 @@ export default function MoveDetails({ move, onBack, loading, error }) {
             <p>PP: {move.pp}</p>
             <p>Priority: {move.priority}</p>
             <p>Damage Type: {move.damage_class.name.charAt(0).toUpperCase() + move.damage_class.name.slice(1)}</p>
-            <p>Generation: {move.generation.name[move.generation.name.length - 1].toUpperCase()}</p>
+            <p>Generation: {move.generation.name}</p>
           </div>
         </div>
 
