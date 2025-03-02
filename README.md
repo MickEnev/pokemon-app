@@ -2,18 +2,21 @@
 
 This is my second app in a series of apps I am making to learn React. My goal for each subsequent project is to incrementally build upon previous projects. The goal here is that features which were novel and difficult for me to implement in project 1 should be trivial by project 5. This app is similar to my Lord of The Rings app but with some added features. Current features include: displaying all pokemon as well as all moves and fetching their data upon request.
 
-![image](https://github.com/user-attachments/assets/928558a6-4eb6-4b17-8763-18dc86ece55b)
-![image](https://github.com/user-attachments/assets/d9dc7b70-5466-46c3-b00b-1352f2309dea)
-![image](https://github.com/user-attachments/assets/56e6426c-0b5b-4ecd-a260-bede07ee625d)
-![image](https://github.com/user-attachments/assets/9de40e15-e753-4c12-b1eb-2798db1d772d)
-![image](https://github.com/user-attachments/assets/60483bed-a51b-4d42-aff0-3fc3bffc7014)
+![image](https://github.com/user-attachments/assets/5c139dfc-d5cd-4ef0-a7c3-9b599c00a909)
+![image](https://github.com/user-attachments/assets/b69dc76e-8c7a-4208-8941-6c9bd97e25fa)
+![image](https://github.com/user-attachments/assets/150d00ae-5081-4ad8-b343-90253f8130b1)
+![image](https://github.com/user-attachments/assets/ebd96731-ecae-46de-a2f7-02c2a77a4b82)
+![image](https://github.com/user-attachments/assets/b9da88a5-e221-4b1b-a4d3-cf1b36b0b3f9)
+![image](https://github.com/user-attachments/assets/4ffcc7c9-ac48-40ca-b831-7ef6c53532c9)
+
+
+
 
 
 
 
 ## Roadmap
-In the coming days I will add similar functionality for items, and berries. As with my lord of the rings app this is a way for me to learn react so after I get a few more projects under my belt I will return to this one and subsequently judge and improve 
-any areas that need fixing (since this is my second ever project in react I am willing to bet there will be quite a few!).
+As with my lord of the rings app this is a way for me to learn react so after I get a few more projects under my belt I will return to this one and subsequently judge and improve any areas that need fixing (since this is my second ever project in react I am willing to bet there will be quite a few!).
 
 ## API Used
 [Pokemon API](https://pokeapi.co/)
