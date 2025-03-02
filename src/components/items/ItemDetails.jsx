@@ -40,9 +40,8 @@ export default function ItemDetails({ item, onBack, loading, error }) {
                   <h2>Info</h2>
                   <div className={styles.statsList}>
                     <p>Cost: {item.cost}</p>
-                    <p>Category: {item.category.name}</p>
-                    <p>Attributes: {item.attributes[0].name}</p>
-                    <p>Category: {item.category.name}</p>
+                    <p>Category: {item.category.name.charAt(0).toUpperCase() + item.category.name.slice(1)}</p>
+                    <p>Attributes: {item.attributes[0].name.charAt(0).toUpperCase() + item.attributes[0].name.slice(1)}</p>
                   </div>
                 </div>
 

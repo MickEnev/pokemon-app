@@ -31,8 +31,8 @@ export default function LocationDetails({ location, onBack, loading, error }) {
                   <h2>Details</h2>
                   <div className={styles.statsList}>
                     <p>Region: {location.region.name.charAt(0).toUpperCase() + location.region.name.slice(1)}</p>
-                    <p>Generation: {location.game_indices[0].generation.name.charAt(0).toUpperCase() + location.game_indices[0].generation.name.slice(1)}</p>
-                    <p>Areas: {location.areas[0].name}</p>
+                    <p>Generation: {"The API currently seems to be bugged for generation ._." /*//location.game_indices[0].generation.name[location.game_indices[0].generation.name.length - 2] == "i" || location.game_indices[0].generation.name[location.game_indices[0].generation.name.length - 2] == "v"? location.game_indices[0].generation.name[location.game_indices[0].generation.name.length - 2].charAt(0).toUpperCase() + location.game_indices[0].generation.name[location.game_indices[0].generation.name.length - 1].charAt(0).toUpperCase() + " (The API seems to be bugged and says IV for everything ._.)" : location.game_indices[0].generation.name[location.game_indices[0].generation.name.length - 1].charAt(0).toUpperCase()*/}</p>
+                    
                   </div>
                 </div>
         
