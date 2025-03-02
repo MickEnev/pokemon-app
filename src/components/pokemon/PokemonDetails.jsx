@@ -13,7 +13,6 @@ export default function PokemonDetails({ pokemon, onBack, loading, error }) {
   if (!pokemon) {
     return <div className={styles.notFound}>Pokemon not found</div>;
   }
-
   return (
     <div className={styles.pokemonDetails}>
       <button 
@@ -33,15 +32,36 @@ export default function PokemonDetails({ pokemon, onBack, loading, error }) {
               alt={pokemon.name} 
               className={styles.pokemonSprite}
             />
+            <img 
+              src={pokemon.sprites.front_shiny} 
+              alt={pokemon.name} 
+              className={styles.pokemonSprite}
+            />
           </div>
         )}
-        
+
         <div className={styles.statsContainer}>
-          <h2>Stats</h2>
+          <h2>Info</h2>
           <div className={styles.statsList}>
             <p>Height: {pokemon.height}</p>
             <p>Weight: {pokemon.weight}</p>
             <p>Base Experience: {pokemon.base_experience}</p>
+
+          </div>
+        </div>
+        
+        <div className={styles.statsContainer}>
+          <h2>Stats</h2>
+          <div className={styles.statsList}>
+            <p>Base Stat Total: {pokemon.stats[0].base_stat + pokemon.stats[1].base_stat + pokemon.stats[2].base_stat + pokemon.stats[3].base_stat
+              + pokemon.stats[4].base_stat + pokemon.stats[5].base_stat}</p>
+            <p>HP: {pokemon.stats[0].base_stat}</p>
+            <p>Attack: {pokemon.stats[1].base_stat}</p>
+            <p>Defense: {pokemon.stats[2].base_stat}</p>
+            <p>Sp. Atk: {pokemon.stats[3].base_stat}</p>
+            <p>Sp. Def: {pokemon.stats[4].base_stat}</p>
+            <p>Speed: {pokemon.stats[5].base_stat}</p>
+
           </div>
         </div>
         

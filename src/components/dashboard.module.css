@@ -15,3 +15,8 @@
 .dashboard::-webkit-scrollbar {
     display: none;
 }
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
